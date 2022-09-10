@@ -1,0 +1,75 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(#a8d0dd, #d8a7a7);
+    font-family: cursive;
+    .boxCalculator{
+        height: 100%;
+        #entete{
+            font-size: 36px;
+            font-weight: bolder;
+            color: #9d9595;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .calculateur-div{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 50%;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: #618d9b;
+            gap: 24px 20px;
+            padding: 32px 58px;
+            margin-top: 20px;
+            button {
+                cursor: pointer;
+                border-bottom: 4px solid rgb(166, 157, 145);
+                font-size: 32px;
+                background-color: rgb(229, 228, 225);
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-radius: 8px;
+                color:  rgb(130 95 95);
+            }
+            #equals,
+            #clear{
+                grid-column: span 2;
+                background-color: #d6adad;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-radius: 8px;
+                color: rgb(255, 255, 255);
+            
+            }
+            .del2{
+                background-color: #d6adad;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-radius: 8px;
+                color: rgb(255, 255, 255);
+            }
+        }
+        #display{
+            align-items: center;
+            display: block;
+            height: 60px;
+            border-radius: 8px;
+            border: 20px solid rgb(229, 228, 225);
+            background-color: rgb(229, 228, 225);
+            font-size: 32px;
+            text-align: end;
+            margin-top: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+    
+}
