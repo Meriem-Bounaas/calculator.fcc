@@ -9,7 +9,7 @@ const Calculateur = () =>{
 
     function calculate(a, operator, b) {
         switch (operator) {
-          case "+":
+          case "+": 
             return Number(a) + Number(b);
           case "-":
             return Number(a) - Number(b);
